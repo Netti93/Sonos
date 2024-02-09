@@ -2373,7 +2373,7 @@ class SonosPlayer extends IPSModule
                 // Titelanzeige
                 $currentStation = 0;
 
-                if ($status != SonosAccess::PLAY) {
+                if ($status == SonosAccess::STOP) {
                     // No title if not playing
                     $actuallyPlaying = '';
                 } else {
